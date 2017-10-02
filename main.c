@@ -11,13 +11,13 @@ int main ()
   while((c = getchar()) != EOF && c != '\n')
   {
     string[count] = c;
-      if(count > longLine)
-        {
-          flag = 1;
-        }
+      if(count > longLine) { flag = 1; }
       ++count;
   }
-  if(flag == 1) { for(j = 0; j < count; j++) { printf("%c", string[j]); }
+  if(flag == 1)
+    {
+      for (j = 0; j < count; j++) { printf ("%c", string[j]); }
+    }
   printf("\n");
   return 0;
 }
